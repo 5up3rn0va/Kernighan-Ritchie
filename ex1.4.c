@@ -6,13 +6,13 @@ int main()
 {
 	float fahr, cel;
 
-	printf("Fahrenheit-Celsius Table\n");
+	printf("Celsius-Fahrenheit Table\n");
 	printf("------------------------\n");
 
-	for(fahr = 0; fahr <= UPPER; fahr+=STEP)
+	for(cel = 0; cel <= UPPER; cel+=STEP)
 	{
-		cel = 5.0/9.0 * (fahr-32);
-		printf("%3.0f %6.1f\n", fahr, cel);
+		fahr = (9.0/5.0 * cel)+32.0;
+		printf("%3.0f %6.1f\n", cel, fahr);
 	}
 
 	return 0;

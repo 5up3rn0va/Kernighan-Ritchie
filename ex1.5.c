@@ -9,7 +9,7 @@ int main()
 	printf("Fahrenheit-Celsius Table\n");
 	printf("------------------------\n");
 
-	for(fahr = 0; fahr <= UPPER; fahr+=STEP)
+	for(fahr = UPPER; fahr >= 0; fahr-=STEP)
 	{
 		cel = 5.0/9.0 * (fahr-32);
 		printf("%3.0f %6.1f\n", fahr, cel);
